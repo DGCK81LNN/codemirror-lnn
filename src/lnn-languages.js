@@ -1,5 +1,0 @@
-export * as css from "@codemirror/lang-css"
-export * as html from "@codemirror/lang-html"
-export * as javascript from "@codemirror/lang-javascript"
-export * as json from "@codemirror/lang-json"
-export * as markdown from "@codemirror/lang-markdown"

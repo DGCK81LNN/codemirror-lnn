@@ -1,13 +1,13 @@
-export * as CodeMirror from "codemirror"
-import * as css from "@codemirror/lang-css"
-import * as html from "@codemirror/lang-html"
-import * as javascript from "@codemirror/lang-javascript"
-import * as json from "@codemirror/lang-json"
-import * as markdown from "@codemirror/lang-markdown"
-export const lnnLanguages = {
-  css,
-  html,
-  javascript,
-  json,
-  markdown,
-}
+export { basicSetup, minimalSetup } from "codemirror"
+export * as state from "@codemirror/state"
+export * as view from "@codemirror/view"
+export * as language from "@codemirror/language"
+export * as commands from "@codemirror/commands"
+export * as search from "@codemirror/search"
+export * as autocomplete from "@codemirror/autocomplete"
+export * as lint from "@codemirror/lint"
+export * as langCss from "@codemirror/lang-css"
+export * as langHtml from "@codemirror/lang-html"
+export * as langJavascript from "@codemirror/lang-javascript"
+export * as langJson from "@codemirror/lang-json"
+export * as langMarkdown from "@codemirror/lang-markdown"
