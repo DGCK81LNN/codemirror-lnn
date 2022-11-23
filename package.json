@@ -1,5 +1,19 @@
 {
-  "private": true,
+  "name": "@dgck81lnn/codemirror-lnn",
+  "description": "Pre-bundled build of CodeMirror 6",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "dist/codemiror-lnn.min.js",
+  "types": "dist/codemirror-lnn.d.ts",
+  "files": [
+    "/dist"
+  ],
+  "author": "DGCK81LNN <triluolnn@163.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DGCK81LNN/codemirror-lnn.git"
+  },
+  "license": "MIT",
   "dependencies": {
     "@codemirror/lang-css": "^6.0.1",
     "@codemirror/lang-html": "^6.2.0",
@@ -12,6 +26,6 @@
     "esbuild": "^0.15.15"
   },
   "scripts": {
-    "build": "esbuild --bundle --format=iife --global-name=CodeMirror --target=es2018 --minify --sourcemap src/index.mjs --outfile=dist/codemirror-lnn.min.js"
+    "build": "rm -rf dist && mkdir dist && cp src/index.d.ts dist/codemirror-lnn.d.ts && esbuild --bundle --format=iife --global-name=CodeMirror --target=es2018 --minify --sourcemap src/index.js --outfile=dist/codemirror-lnn.min.js"
   }
 }
