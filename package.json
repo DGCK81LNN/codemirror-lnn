@@ -1,7 +1,7 @@
 {
   "name": "@dgck81lnn/codemirror-lnn",
   "description": "Pre-bundled build of CodeMirror 6",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "type": "module",
   "main": "dist/codemiror-lnn.min.js",
   "types": "dist/codemirror-lnn.d.ts",
