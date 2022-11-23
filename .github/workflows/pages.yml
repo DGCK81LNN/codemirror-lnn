@@ -17,7 +17,7 @@ jobs:
     - run: npm run build
     - name: Move files
       run: |
-        cp src/index.d.ts dist/
+        cp src/index.d.ts dist/codemirror-lnn.d.ts
         mkdir public
         mv dist public/
     - name: Deploy to GitHub Pages
