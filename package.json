@@ -23,7 +23,7 @@
     "codemirror": "^6.0.1"
   },
   "devDependencies": {
-    "esbuild": "^0.17.10"
+    "esbuild": "^0.18.11"
   },
   "scripts": {
     "build": "rm -rf dist && mkdir dist && cp src/index.d.ts dist/codemirror-lnn.d.ts && esbuild --bundle --format=iife --global-name=CodeMirror --target=es2018 --minify --sourcemap src/index.js --outfile=dist/codemirror-lnn.min.js"
